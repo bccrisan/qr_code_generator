@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-from barcode import EAN13
+from barcode import UPCA
 
 
 def app():
@@ -27,7 +27,7 @@ def generate_barcodes():
             for line in in_file:
                 line_list = line.split(",")
                 if line_list[5] == "\n":
-                    new_barcode = EAN13(line_list[0])
+                    new_barcode = UPCA(line_list[0])
                     new_barcode.save(line_list[0])
                     line_list[5] = line_list[0] + ".svg\n"
                 result = ",".join(line_list)
