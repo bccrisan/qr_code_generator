@@ -1,10 +1,3 @@
-UPC # (Store # 0970),Name,Price,Size,Colour
-194133406850,Girls Overalls,8.99,4,Pink
-194133405013,Girls Overalls,6.99,4,Denim
-194133405051,Girls Overalls,6.99,8,Denim
-194133408090,Girls Overalls,6.99,4,Denim
-194133408137,Girls Overalls,6.99,8,Denim
-194133403262,Girls Dresses- Jumpers,9.99,4,Denim
-194133403309,Girls Dresses- Jumpers,9.99,8,Denim
-194654176294,Shoes Constructed Shoes,22.99,7,Multicol
-194654176331,Shoes Constructed Shoes,22.99,11,Multicol
+UPC # (Store # 0970),Name,Price,Size,Colour,Barcode
+194133406850,Girls Overalls,8.99,4,Pink,
+194133405013,Girls Overalls,6.99,4,Denim,
