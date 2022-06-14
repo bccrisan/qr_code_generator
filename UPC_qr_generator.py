@@ -10,13 +10,16 @@ def app():
     with open("updated_data.csv") as data:
         for line in data:
             line_list = line.split(",")
-            col[0].write(line_list[0])
+            if line_list[0] == "UPC # (Store # 0970)":
+                col[0].markdown(f"<span style='text-align: center;'>{line_list[0]}</span>", unsafe_allow_html=True)
+            else:
+                col[0].markdown(f"<span style='color: green; width: 5150px; height: 5000px;'>{line_list[0]}</span>", unsafe_allow_html=True)
             col[1].write(line_list[1])
             col[2].write(line_list[2])
             col[3].write(line_list[3])
             col[4].write(line_list[4])
             if line_list[5] == "Barcode\n":
-                col[5].write(line_list[5])
+                col[5].markdown(f"<span style='text-align: center; font-weight: bold;'>{line_list[5]}</span>", unsafe_allow_html=True)
             else:
                 col[5].image(line_list[5].split("\n")[0])
 

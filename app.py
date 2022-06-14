@@ -16,6 +16,7 @@ PAGES = {
 
 
 if __name__ == '__main__':
+    st.set_page_config(layout='wide')
     st.sidebar.title('Navigation')
     selection = st.sidebar.radio("Choose Any", list(PAGES.keys()))
     page = PAGES[selection]
